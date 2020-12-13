@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Exemplo de Formulário Utilizando o Bootstrap">
+    <!-- <script src="//code.jquery.com/jquery.min.js"></script>-->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="./../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../css/style.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro para Vaga</title>
+
+
+</head>
+
+<body>
+    <section class="container">
+        <nav id="menu">
+            <ul>
+                <li> <a href="/">Cadastro</a> </li>
+                <li> <a href="/consulta">Consulta</a></li>
+                <li> <a href="/edicao">Edição</a></li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <header>
+                    <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Cadastro de Interessados </h2>
+                    <span>Nessa seção, preencha seus dados pessoais para eventual vaga.</span>
+                </header>
+            </div>
+        </div>
+
+
+        <section class="container">
+
+            <label for="txtNomeCompleto" class="col-sm-3 col-md-2 control-label">Nome*</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Preencha seu nome " required>
+
+            <label for="txtCPF" class="col-sm-3 col-md-2 control-label">CPF*</label>
+            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Preencha seu CPF " required>
+
+            <label for="txtCelular">Tel. Celular*</label>
+            <input type="text" name="telefone" class="form-control" id="telefone" placeholder="(00)00000-0000" required>
+
+            <label for="txtDataNascimento">Data Nascimento*</label>
+            <input type="date" name="datan" class="form-control" id="datan" required>
+
+            <label for="txtProfissao">Profissao*</label>
+            <input type="text" name="profissao" class="form-control" id="profissao" placeholder="Preencha sua Profissao" required>
+
+
+            <label for="txtEscolaridade">Escolaridade*</label>
+            <input type="text" name="escolaridade" class="form-control" id="escolaridade" placeholder="Ex: Superior" required>
+
+            <label class="control-label" for="txtMensagem">Escreva suas Habilidades*</label>
+            <textarea class="form-control" name="habilidade" id="habilidade" required placeholder="Digite aqui"></textarea>
+
+            <br>
+            <button id="btnEnvia" class="btn btn-primary" onclick="Usuarios.add()">
+                Cadastrar
+            </button>
+
+
+
+
+        </section>
+
+
+
+
+
+
+    </section>
+
+
+    <script src="../javascript/jquery-lib.js"></script>
+    <script src="jquery-mask-plugin/dist/jquery.mask.js"> </script>
+    <script src="../javascript/post.js"></script>
+
+
+
+</body>
+
+</html>

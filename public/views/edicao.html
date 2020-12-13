@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Exemplo de Formulário Utilizando o Bootstrap">
+    <!-- <script src="//code.jquery.com/jquery.min.js"></script>-->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="./../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../css/style.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editar</title>
+
+</head>
+
+<body>
+    <section class="container">
+        <nav id="menu">
+            <ul>
+                <li> <a href="/">Cadastro</a> </li>
+                <li> <a href="/consulta">Consulta</a></li>
+                <li> <a href="/edicao">Edição</a></li>
+
+            </ul>
+        </nav>
+    </section>
+    <br>
+    <header>
+
+    </header>
+    <section class="container">
+        <label for="txtCPF" class="col-sm-3 col-md-2 control-label">CPF:</label>
+
+        <input type="text" name="CPF" id="CPF" class="form-control" placeholder="Preencha seu CPF " required>
+        <br>
+        <button id="btnEnvia" class="btn btn-primary" onclick="Usuarios.consulta()">
+            Buscar
+        </button>
+
+
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <header>
+                    <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Edição de Interessado </h2>
+                    <span>Nessa seção, entre com o CPF para editar um interessado na vaga.</span>
+                </header>
+            </div>
+        </div>
+
+        <label for="nome" class="col-sm-3 col-md-2 control-label" >Nome:</label>
+
+        <input type="text" name="nome" id="nome" class="form-control" placeholder="Preencha seu nome ">
+
+        <label for="telefone" class="col-sm-3 col-md-2 control-label">Telefone:</label>
+
+        <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Preencha seu CPF ">
+
+        <label for="date" class="col-sm-3 col-md-2 control-label">Data Nascimento:</label>
+
+        <input type="date" name="datan" id="datan" class="form-control">
+
+        <label for="profissao" class="col-sm-3 col-md-2 control-label">Profissao:</label>
+
+        <input type="text" name="profissao" id="profissao" class="form-control" placeholder="Preencha sua Profissao ">
+
+        <label for="escolaridade" class="col-sm-3 col-md-2 control-label">Escolaridade:</label>
+
+        <input type="text" name="escolaridade" id="escolaridade" class="form-control" placeholder="Preencha sua escolaridade ">
+
+        <label for="escolaridade" class="col-sm-3 col-md-2 control-label">Habilidades:</label>
+
+        <textarea name="habilidade" id="habilidade" class="form-control" placeholder="Digite aqui suas habilidades "></textarea>
+
+        <br>
+        <button id="btnEnvia" class="btn btn-primary" onclick="Usuarios.edita()">
+            Editar
+        </button>
+
+    </section>
+
+    <script src="../javascript/jquery-lib.js"></script>
+    <script src="jquery-mask-plugin/dist/jquery.mask.js"> </script>
+    <script src="../javascript/post.js"></script>
+
+</body>
+
+</html>
